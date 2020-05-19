@@ -1,0 +1,7 @@
+<a target="_blank" href="{{url}}"><strong>{{name}} ({{numPrs}})</strong></a>
+
+<ul class="project-list">
+    {{#each pr}}
+        <li class="pr-item">{{>pr pr=.}}</li>
+    {{/each}}
+</ul>

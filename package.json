@@ -1,0 +1,20 @@
+{
+  "name": "show-pr-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "all-pull-requests.js",
+  "scripts": {
+    "build": "handlebars templates/ -m -f templates/templates.min.js && gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.6",
+    "moment": "^2.25.3"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1"
+  }
+}

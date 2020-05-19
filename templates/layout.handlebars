@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Show all active HQV pull requests</title>
+    </head>
+
+    <body>
+        <div id="content">
+            {{#each projects}}
+                {{>project project=.}}
+            {{/each}}
+        </div>
+    </body>
+</html>
