@@ -1,4 +1,5 @@
 BUILD
+npm install
 Windows: set "TFSURL=https://url-to-tfs.com/" && npm run build
 *Nix: TFSURL=https://url-to-tfs.com/ && npm run build
 
