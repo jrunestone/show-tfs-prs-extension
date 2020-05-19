@@ -1,7 +1,7 @@
 {
-    "name": "Show all active HQV pull requests",
+    "name": "Show all active tfs pull requests across projects",
     "version": "1.0",
-    "description": "Shows all active HQV pull requests",
+    "description": "Shows all active tfs pull requests across projects",
     "manifest_version": 2,
 
     "content_scripts": [

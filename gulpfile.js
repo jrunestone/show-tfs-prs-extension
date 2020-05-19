@@ -5,7 +5,7 @@ var rename = require('gulp-rename');
 
 gulp.task('build-manifest', function () {
     return gulp
-        .src('manifest.json.tpl')
+        .src('./manifest.json.tpl')
         .pipe(replace('$TFSURL$', process.env.TFSURL))
         .pipe(rename('manifest.json'))
         .pipe(gulp.dest('./dist/'));
@@ -26,4 +26,10 @@ gulp.task('build-js', function() {
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('default', gulp.parallel('build-manifest', 'build-js'));
+gulp.task('build-css', function () {
+    return gulp
+        .src('./all-pull-requests.css')
+        .pipe(gulp.dest('./dist/'));
+})
+
+gulp.task('default', gulp.parallel('build-manifest', 'build-js', 'build-css'));

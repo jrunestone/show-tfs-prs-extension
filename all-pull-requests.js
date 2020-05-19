@@ -51,7 +51,6 @@ const fetchPrs = async () => {
 };
 
 (async () => {
-    window.title = 'Show all active HQV pull requests'
     document.body.innerHTML = 'Loading..';
 
     const projPrs = await fetchPrs();
