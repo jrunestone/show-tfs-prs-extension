@@ -9,4 +9,4 @@ RUN
 Browse to https://url-to-tfs.com/all-pull-requests
 
 AUTH
-Requires you to be already logged in to tfs since the code runs on your client
+Requires you to be already logged in to tfs since the code runs on your client using tfs rest apis
