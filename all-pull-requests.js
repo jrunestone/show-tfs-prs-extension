@@ -1,8 +1,8 @@
-const projUrl = 'https://tfs.husqvarnagroup.com/tfs/OMP/{proj}';
-const prUrl = 'https://tfs.husqvarnagroup.com/tfs/OMP/{proj}/_git/{repo}/pullrequest/{pr}';
+const projUrl = '$TFSURL$/{proj}';
+const prUrl = '$TFSURL$/{proj}/_git/{repo}/pullrequest/{pr}';
 
 const fetchPrs = async () => {
-    const projRes = await fetch('https://tfs.husqvarnagroup.com/tfs/OMP/_apis/projects?api-version=2.0');
+    const projRes = await fetch('$TFSURL$/_apis/projects?api-version=2.0');
     const projs = await projRes.json();
 
     const projObjs = projs.value;
@@ -16,7 +16,7 @@ const fetchPrs = async () => {
     });
 
     return Promise.all(projObjs.map(async proj => {
-        const prsRes = await fetch(`https://tfs.husqvarnagroup.com/tfs/OMP/${proj.id}/_apis/git/pullrequests`);
+        const prsRes = await fetch(`$TFSURL$/${proj.id}/_apis/git/pullrequests`);
         const prs = await prsRes.json();
         let prObjs = [];
 

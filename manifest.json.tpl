@@ -6,9 +6,9 @@
 
     "content_scripts": [
         {
-            "matches": ["https://tfs.husqvarnagroup.com/tfs/OMP/all-pull-requests"],
-            "js": ["dist/all-pull-requests.min.js"],
-            "css": ["dist/all-pull-requests.css"]
+            "matches": ["$TFSURL$/all-pull-requests"],
+            "js": ["./all-pull-requests.min.js"],
+            "css": ["./all-pull-requests.css"]
         }
     ]
 }
