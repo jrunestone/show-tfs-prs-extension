@@ -1,5 +1,6 @@
 BUILD
-set "TFSURL=https://url-to-tfs.com/" & npm run build
+Windows: set "TFSURL=https://url-to-tfs.com/" & npm run build
+*Nix: TFSURL=https://url-to-tfs.com/ & npm run build
 
 INSTALL
 Switch to dev mode in chrome::extensions and choose load unpacked and select the dist folder
