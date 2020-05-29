@@ -1,12 +1,13 @@
 BUILD
-Windows: set "TFSURL=https://url-to-tfs.com/" && npm run build
-*Nix: TFSURL=https://url-to-tfs.com/ && npm run build
+npm install
+Windows: set "TFSURL=https://url-to-tfs.com/x/y" && npm run build (no slash at the end)
+*Nix: TFSURL=https://url-to-tfs.com/x/y && npm run build (no slash at the end)
 
 INSTALL
 Switch to dev mode in chrome://extensions and choose load unpacked and select the dist folder
 
 RUN
-Browse to https://url-to-tfs.com/all-pull-requests
+Browse to https://url-to-tfs.com/x/y/all-pull-requests (extension triggers on this url despite 404)
 
 AUTH
-Requires you to be already logged in to tfs since the code runs on your client
+Requires you to be already logged in to tfs since the code runs on your client using tfs rest apis
