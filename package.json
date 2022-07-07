@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.7.6",
-    "moment": "^2.25.3"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
